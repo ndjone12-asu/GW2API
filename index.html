@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GW2API Project</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+
+<body>
+    <form id="token_collector" name="token_collector" action="javascript:submit()">
+        <div id="token_submit">
+            <h3>Submit your API key!</h3>
+            <input type="hidden" id="submitToken">
+            <input type="text" id="API_access_token" name="API_access_token">
+            <input type="submit" id="submit" value="submit">
+        </div>
+    </form>
+    <form id="token_finder" name="token_finder" action="javascript:submit2()">
+        <div id="token_retrieve">
+            <h3>Enter name to get your API key!</h3>
+            <input type="hidden" id="getToken" name="getToken">
+            <input type="text" id="account_name" name="account_name">
+            <input type="submit" id="submit2" value="submit">
+        </div>
+    </form>
+</body>
+</html>
+<script src="index.js"></script>
