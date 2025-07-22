@@ -1,8 +1,8 @@
-import database
+import deprecated.database as database
 import http.server
 import json
 import os
-import gw2api
+import deprecated.gw2api as gw2api
 
 FILENAME = __file__.split(os.sep)[-1].split('.')[0]
 
