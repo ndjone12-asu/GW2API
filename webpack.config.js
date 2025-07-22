@@ -6,4 +6,12 @@ module.exports = {
     filename: 'index-bundle.js',  // output bundle file name
     path: path.resolve(__dirname, './static'),  // path to our Django static directory
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+}
 };
